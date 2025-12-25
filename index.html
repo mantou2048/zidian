@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中华字典</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>中华字典</h1>
+            <p class="subtitle">探索汉字之美</p>
+        </header>
+
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="请输入汉字或拼音..." maxlength="1">
+            <button onclick="searchChar()">查询</button>
+        </div>
+
+        <div id="result" class="result">
+            <div class="welcome">
+                <p>欢迎使用中华字典</p>
+                <p class="hint">请在上方输入框中输入一个汉字进行查询</p>
+            </div>
+        </div>
+
+        <div class="dictionary-list">
+            <h2>常用汉字</h2>
+            <div class="char-grid" id="charGrid"></div>
+        </div>
+
+        <footer>
+            <p>中华字典 - 传承中华文化</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
